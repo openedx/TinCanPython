@@ -191,7 +191,15 @@ class RemoteLRS(Base):
         lrs_response = self._send_request(request)
 
         if lrs_response.success:
-            lrs_response.content = About.from_json(lrs_response.data)
+            # remote LRS may include redundant X-Experience-API-Version key in JSON data
+
+            def _clean_lrs_about(dct):
+                if dct.get('X-Experience-API-Version'):
+                    del dct['X-Experience-API-Version']
+                return dct
+
+            data_clean = json.dumps(json.loads(lrs_response.data, object_hook=_clean_lrs_about))
+            lrs_response.content = About.from_json(data_clean)
 
         return lrs_response
 
