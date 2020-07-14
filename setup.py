@@ -31,7 +31,7 @@ setup(
         'tincan/conversions',
         'tincan/documents',
     ],
-    version='0.0.8',
+    version='0.0.9',
     description='A Python 3 library for implementing Tin Can API.',
     author='edX',
     author_email='oscm@edx.org',
