@@ -38,7 +38,7 @@ class InteractionComponent(SerializableBase):
         self._id = None
         self._description = None
 
-        super(InteractionComponent, self).__init__(*args, **kwargs)
+        super().__init__(*args, **kwargs)
 
     @property
     def id(self):

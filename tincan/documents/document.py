@@ -51,7 +51,7 @@ class Document(Base):
         self._etag = None
         self._timestamp = None
 
-        super(Document, self).__init__(*args, **kwargs)
+        super().__init__(*args, **kwargs)
 
     @property
     def id(self):

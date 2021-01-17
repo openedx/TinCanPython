@@ -31,7 +31,7 @@ class ContextActivities(SerializableBase):
         self._grouping = None
         self._other = None
 
-        super(ContextActivities, self).__init__(*args, **kwargs)
+        super().__init__(*args, **kwargs)
 
     @property
     def category(self):

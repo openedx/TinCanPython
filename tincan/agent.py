@@ -45,7 +45,7 @@ class Agent(SerializableBase):
         self._openid = None
         self._account = None
 
-        super(Agent, self).__init__(*args, **kwargs)
+        super().__init__(*args, **kwargs)
 
     @property
     def object_type(self):

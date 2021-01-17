@@ -114,12 +114,12 @@ def jsonify_timedelta(value):
     # hours
     bigger_exists = date or hours
     if bigger_exists:
-        time += '{:02}H'.format(hours)
+        time += f'{hours:02}H'
 
     # minutes
     bigger_exists = bigger_exists or minutes
     if bigger_exists:
-        time += '{:02}M'.format(minutes)
+        time += f'{minutes:02}M'
 
     # seconds
     if seconds.is_integer():
@@ -130,7 +130,7 @@ def jsonify_timedelta(value):
         # remove trailing zeros
         seconds = seconds.rstrip('0')
 
-    time += '{}S'.format(seconds)
+    time += f'{seconds}S'
 
     return 'P' + date + time
 

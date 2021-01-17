@@ -46,7 +46,7 @@ class Attachment(SerializableBase):
         self._description = None
         self._fileurl = None
 
-        super(Attachment, self).__init__(*args, **kwargs)
+        super().__init__(*args, **kwargs)
 
     @property
     def usage_type(self):

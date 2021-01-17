@@ -62,7 +62,7 @@ class AgentProfileDocumentTest(unittest.TestCase):
             AgentProfileDocument(d)
 
     def test_init_arg_exception_obj(self):
-        class Tester(object):
+        class Tester:
             def __init__(self, id=None, bad_test="test"):
                 self.id = id
                 self.bad_test = bad_test

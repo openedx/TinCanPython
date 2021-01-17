@@ -45,7 +45,7 @@ class ActivityProfileDocument(Document):
 
     def __init__(self, *args, **kwargs):
         self._activity = None
-        super(ActivityProfileDocument, self).__init__(*args, **kwargs)
+        super().__init__(*args, **kwargs)
 
     @property
     def activity(self):

@@ -55,7 +55,7 @@ class StateDocument(Document):
         self._activity = None
         self._registration = None
 
-        super(StateDocument, self).__init__(*args, **kwargs)
+        super().__init__(*args, **kwargs)
 
     @property
     def agent(self):

@@ -1,4 +1,3 @@
-# coding=utf-8
 #
 # Copyright 2014 Rustici Software
 #
@@ -59,7 +58,7 @@ class LRSResponseTest(unittest.TestCase):
             LRSResponse(d)
 
     def test_init_arg_exception_obj(self):
-        class Tester(object):
+        class Tester:
             def __init__(self, success=True, bad_test="test"):
                 self.success = success
                 self.bad_test = bad_test
@@ -143,7 +142,7 @@ class LRSResponseTest(unittest.TestCase):
 
         self.assertIsInstance(resp, LRSResponse)
         self.assertIsInstance(resp.data, str)
-        self.assertEqual(resp.data, u"δοκιμή περιεχομένου")
+        self.assertEqual(resp.data, "δοκιμή περιεχομένου")
 
     def test_setters_none(self):
         resp = LRSResponse()
@@ -168,7 +167,7 @@ class LRSResponseTest(unittest.TestCase):
         self.assertIsNone(resp.response)
 
     def test_request_setter(self):
-        class Tester(object):
+        class Tester:
             def __init__(self, resource="ok", headers=None):
                 if headers is None:
                     headers = {"test": "ok"}
@@ -188,7 +187,7 @@ class LRSResponseTest(unittest.TestCase):
         self.assertEqual(resp.request.headers, {"test": "ok"})
 
     def test_response_setter(self):
-        class Tester(object):
+        class Tester:
             def __init__(self, msg="ok", version="test"):
                 self.msg = msg
                 self.version = version

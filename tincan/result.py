@@ -58,7 +58,7 @@ class Result(SerializableBase):
         self._response = None
         self._extensions = None
 
-        super(Result, self).__init__(*args, **kwargs)
+        super().__init__(*args, **kwargs)
 
     @property
     def score(self):

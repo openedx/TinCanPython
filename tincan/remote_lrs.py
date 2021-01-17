@@ -101,7 +101,7 @@ class RemoteLRS(Base):
             kwargs.pop("password")
             kwargs["auth"] = auth_string
 
-        super(RemoteLRS, self).__init__(*args, **kwargs)
+        super().__init__(*args, **kwargs)
 
     def _send_request(self, request):
         """Establishes connection and returns http response based off of request.

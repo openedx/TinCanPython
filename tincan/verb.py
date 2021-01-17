@@ -37,7 +37,7 @@ class Verb(SerializableBase):
         self._id = None
         self._display = None
 
-        super(Verb, self).__init__(*args, **kwargs)
+        super().__init__(*args, **kwargs)
 
     def __repr__(self):
         return 'Verb: %s' % self.__dict__

@@ -31,7 +31,7 @@ class LanguageMap(dict, SerializableBase):
         """
         check_args = dict(*args, **kwargs)
         list(map(lambda k_v: (k_v[0], self._check_basestring(k_v[1])), iter(check_args.items())))
-        super(LanguageMap, self).__init__(check_args)
+        super().__init__(check_args)
 
     def __setitem__(self, prop, value):
         """Allows bracket notation for setting values with hyphenated keys
@@ -45,7 +45,7 @@ class LanguageMap(dict, SerializableBase):
 
         """
         self._check_basestring(value)
-        super(LanguageMap, self).__setitem__(prop, value)
+        super().__setitem__(prop, value)
 
     @staticmethod
     def _check_basestring(value):

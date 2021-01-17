@@ -68,7 +68,7 @@ class ActivityDefinition(SerializableBase):
         self._steps = None
         self._extensions = None
 
-        super(ActivityDefinition, self).__init__(*args, **kwargs)
+        super().__init__(*args, **kwargs)
 
     @property
     def name(self):

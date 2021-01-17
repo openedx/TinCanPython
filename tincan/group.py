@@ -34,7 +34,7 @@ class Group(Agent):
         self._object_type = None
         self._member = AgentList()
 
-        super(Group, self).__init__(*args, **kwargs)
+        super().__init__(*args, **kwargs)
 
     def addmember(self, value):
         """Adds a single member to this group's list of members.

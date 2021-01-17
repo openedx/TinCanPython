@@ -31,7 +31,7 @@ class AgentAccount(SerializableBase):
         self._name = None
         self._home_page = None
 
-        super(AgentAccount, self).__init__(*args, **kwargs)
+        super().__init__(*args, **kwargs)
 
     @property
     def name(self):
