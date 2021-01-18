@@ -62,7 +62,7 @@ class Context(SerializableBase):
         self._statement = None
         self._extensions = None
 
-        super(Context, self).__init__(*args, **kwargs)
+        super().__init__(*args, **kwargs)
 
     @property
     def registration(self):

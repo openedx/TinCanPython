@@ -26,4 +26,4 @@ class Extensions(dict, SerializableBase):
     """
 
     def __init__(self, *args, **kwargs):
-        super(Extensions, self).__init__(*args, **kwargs)
+        super().__init__(*args, **kwargs)

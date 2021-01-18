@@ -53,7 +53,7 @@ class HTTPRequest(Base):
         self._content = None
         self._ignore404 = None
 
-        super(HTTPRequest, self).__init__(*args, **kwargs)
+        super().__init__(*args, **kwargs)
 
     @property
     def method(self):

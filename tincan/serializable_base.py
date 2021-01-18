@@ -64,7 +64,7 @@ class SerializableBase(Base):
                 new_kwargs[uscore[1:]] = new_kwargs[camel]
                 new_kwargs.pop(camel)
 
-        super(SerializableBase, self).__init__(**new_kwargs)
+        super().__init__(**new_kwargs)
 
     @classmethod
     def from_json(cls, json_data):

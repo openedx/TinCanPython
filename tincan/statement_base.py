@@ -55,7 +55,7 @@ class StatementBase(SerializableBase):
         self._context = None
         self._attachments = None
 
-        super(StatementBase, self).__init__(*args, **kwargs)
+        super().__init__(*args, **kwargs)
 
     @property
     def actor(self):

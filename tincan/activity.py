@@ -41,7 +41,7 @@ class Activity(SerializableBase, StatementTargetable):
         self._object_type = None
         self._definition = None
 
-        super(Activity, self).__init__(*args, **kwargs)
+        super().__init__(*args, **kwargs)
 
     @property
     def id(self):

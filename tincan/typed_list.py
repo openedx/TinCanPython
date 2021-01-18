@@ -27,12 +27,12 @@ class TypedList(list, SerializableBase):
     def __init__(self, *args, **kwargs):
         self._check_cls()
         new_args = [self._make_cls(v) for v in list(*args, **kwargs)]
-        super(TypedList, self).__init__(new_args)
+        super().__init__(new_args)
 
     def __setitem__(self, ind, value):
         self._check_cls()
         value = self._make_cls(value)
-        super(TypedList, self).__setitem__(ind, value)
+        super().__setitem__(ind, value)
 
     def _check_cls(self):
         """If self._cls is not set, raises ValueError.
@@ -56,14 +56,14 @@ class TypedList(list, SerializableBase):
     def append(self, value):
         self._check_cls()
         value = self._make_cls(value)
-        super(TypedList, self).append(value)
+        super().append(value)
 
     def extend(self, value):
         self._check_cls()
         new_args = [self._make_cls(v) for v in value]
-        super(TypedList, self).extend(new_args)
+        super().extend(new_args)
 
     def insert(self, ind, value):
         self._check_cls()
         value = self._make_cls(value)
-        super(TypedList, self).insert(ind, value)
+        super().insert(ind, value)

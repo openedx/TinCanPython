@@ -37,7 +37,7 @@ class About(SerializableBase):
         self._version = None
         self._extensions = None
 
-        super(About, self).__init__(*args, **kwargs)
+        super().__init__(*args, **kwargs)
 
     @property
     def version(self):

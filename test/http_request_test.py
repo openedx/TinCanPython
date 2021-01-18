@@ -56,7 +56,7 @@ class HTTPRequestTest(unittest.TestCase):
             HTTPRequest(d)
 
     def test_init_arg_exception_obj(self):
-        class Tester(object):
+        class Tester:
             def __init__(self, resource="ok", bad_test="test"):
                 self.resource = resource
                 self.bad_test = bad_test
@@ -153,7 +153,7 @@ class HTTPRequestTest(unittest.TestCase):
         self.assertEqual(req.query_params, {})
 
     def test_headers_setter(self):
-        class Tester(object):
+        class Tester:
             def __init__(self, param="ok", tester="test"):
                 self.param = param
                 self.tester = tester
@@ -169,7 +169,7 @@ class HTTPRequestTest(unittest.TestCase):
         self.assertEqual(req.headers["tester"], "test")
 
     def test_query_params_setter(self):
-        class Tester(object):
+        class Tester:
             def __init__(self, param="ok", tester="test"):
                 self.param = param
                 self.tester = tester

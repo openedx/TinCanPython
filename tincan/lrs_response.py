@@ -56,7 +56,7 @@ class LRSResponse(Base):
         self._data = None
         self._content = None
 
-        super(LRSResponse, self).__init__(*args, **kwargs)
+        super().__init__(*args, **kwargs)
 
     @property
     def success(self):

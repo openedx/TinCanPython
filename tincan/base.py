@@ -21,7 +21,7 @@
 """
 
 
-class Base(object):
+class Base:
     _props = []
 
     def __init__(self, *args, **kwargs):
@@ -56,7 +56,7 @@ class Base(object):
 
         """
         if attr.startswith('_') and attr[1:] in self._props:
-            super(Base, self).__setattr__(attr, value)
+            super().__setattr__(attr, value)
         elif attr not in self._props:
             raise AttributeError(
                 "Property '%s' cannot be set on a 'tincan.%s' object. Allowed properties: %s" %
@@ -66,7 +66,7 @@ class Base(object):
                     ', '.join(self._props)
                 ))
         else:
-            super(Base, self).__setattr__(attr, value)
+            super().__setattr__(attr, value)
 
     def __eq__(self, other):
         return isinstance(other, self.__class__) and self.__dict__ == other.__dict__

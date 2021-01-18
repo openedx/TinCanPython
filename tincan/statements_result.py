@@ -34,7 +34,7 @@ class StatementsResult(SerializableBase):
         self._statements = None
         self._more = None
 
-        super(StatementsResult, self).__init__(*args, **kwargs)
+        super().__init__(*args, **kwargs)
 
     @property
     def statements(self):

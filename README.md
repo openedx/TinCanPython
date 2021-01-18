@@ -10,10 +10,10 @@ For more information about the Tin Can API visit:
 
 <http://tincanapi.com/>
 
-Requires Python 2.7 or later.
+Requires Python 3.8 or later.
 
 ## Installation
-TinCanPython requires [Python 2.7](https://www.python.org/downloads/) or later. Python 3 is not supported.
+TinCanPython requires [Python 3.8](https://www.python.org/downloads/) or later.
 
 If you are installing from the Github repo, you will need to install `aniso8601` and `pytz` (use `sudo` as necessary):
 

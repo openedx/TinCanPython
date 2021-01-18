@@ -38,7 +38,7 @@ class StatementRef(SerializableBase):
         self._object_type = None
         self._id = None
 
-        super(StatementRef, self).__init__(*args, **kwargs)
+        super().__init__(*args, **kwargs)
 
     @property
     def object_type(self):

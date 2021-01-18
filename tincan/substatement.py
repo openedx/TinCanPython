@@ -31,7 +31,7 @@ class SubStatement(StatementBase):
     def __init__(self, *args, **kwargs):
         self._object_type = None
 
-        super(SubStatement, self).__init__(*args, **kwargs)
+        super().__init__(*args, **kwargs)
 
     @property
     def object(self):

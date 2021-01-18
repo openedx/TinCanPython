@@ -22,7 +22,7 @@
 """
 
 
-class StatementTargetable(object):
+class StatementTargetable:
     def __init__(self):
         self.object_type = None
 

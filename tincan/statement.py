@@ -63,7 +63,7 @@ class Statement(StatementBase):
         self._result = None
         self._version = Version.latest
 
-        super(Statement, self).__init__(*args, **kwargs)
+        super().__init__(*args, **kwargs)
 
     @property
     def id(self):
