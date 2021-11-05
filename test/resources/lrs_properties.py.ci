@@ -1,5 +1,5 @@
 """
-Contains configuration specific to Travis CI testing
+Contains configuration specific to CI testing
 """
 
 
