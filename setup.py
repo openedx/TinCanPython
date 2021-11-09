@@ -1,3 +1,6 @@
+import os
+import re
+
 from setuptools import setup
 
 
@@ -24,6 +27,23 @@ def is_requirement(line):
     return line and not line.startswith(('-r', '#', '-e', 'git+', '-c'))
 
 
+def get_version(*file_paths):
+    """
+    Extract the version string from the file at the given relative path fragments.
+    """
+    filename = os.path.join(os.path.dirname(__file__), *file_paths)
+    with open(filename, encoding='utf-8') as opened_file:
+        version_file = opened_file.read()
+        version_match = re.search(r"^__version__ = ['\"]([^'\"]*)['\"]",
+                                  version_file, re.M)
+    if version_match:
+        return version_match.group(1)
+    raise RuntimeError('Unable to find version string.')
+
+
+VERSION = get_version("tincan", "__init__.py")
+
+
 setup(
     name='edx-tincan-py35',
     packages=[
@@ -31,7 +51,7 @@ setup(
         'tincan/conversions',
         'tincan/documents',
     ],
-    version='1.0.0',
+    version=VERSION,
     description='A Python 3 library for implementing Tin Can API.',
     author='edX',
     author_email='oscm@edx.org',

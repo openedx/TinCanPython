@@ -55,3 +55,5 @@ from .substatement import SubStatement
 from .typed_list import TypedList
 from .verb import Verb
 from .version import Version
+
+__version__ = '1.0.0'
