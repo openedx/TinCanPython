@@ -1,6 +1,6 @@
 A Python library for implementing Tin Can API.
 
-[![Build Status](https://github.com/edx/TinCanPython/workflows/Python%20CI/badge.svg?branch=master)](https://github.com/edx/TinCanPython/actions?query=workflow%3A%22Python+CI%22)
+[![Build Status](https://github.com/openedx/TinCanPython/workflows/Python%20CI/badge.svg?branch=master)](https://github.com/openedx/TinCanPython/actions?query=workflow%3A%22Python+CI%22)
 
 For hosted API documentation, basic usage instructions, supported version listing, etc. visit the main project website at:
 
