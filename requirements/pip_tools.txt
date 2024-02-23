@@ -4,9 +4,9 @@
 #
 #    make upgrade
 #
-click==7.1.2
+click==8.1.7
     # via pip-tools
-pip-tools==5.5.0
+pip-tools==7.4.0
     # via -r requirements/pip_tools.in
 
 # The following packages are considered to be unsafe in a requirements file:

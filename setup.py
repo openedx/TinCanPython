@@ -58,6 +58,7 @@ setup(
     classifiers=[
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.12',
     ],
     maintainer_email='mailto:brian.miller@tincanapi.com',
     url='http://rusticisoftware.github.io/TinCanPython/',
