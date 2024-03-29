@@ -4,7 +4,7 @@
 #
 #    make upgrade
 #
-aniso8601==8.1.0
+aniso8601==9.0.1
     # via -r requirements/base.txt
 pytz==2020.5
     # via -r requirements/base.txt
