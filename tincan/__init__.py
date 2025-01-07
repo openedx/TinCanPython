@@ -56,4 +56,4 @@ from .typed_list import TypedList
 from .verb import Verb
 from .version import Version
 
-__version__ = '1.1.0'
+__version__ = '1.2.0'

@@ -57,7 +57,6 @@ setup(
     author_email='oscm@edx.org',
     classifiers=[
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: 3.12',
     ],
     maintainer_email='mailto:brian.miller@tincanapi.com',
